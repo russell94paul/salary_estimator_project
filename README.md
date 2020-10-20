@@ -1,5 +1,5 @@
 # salary_estimator_project
 
-##Resources
+## Resources
 https://github.com/arapfaik/scraping-glassdoor-selenium
 
