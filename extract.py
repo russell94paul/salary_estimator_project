@@ -1,6 +1,5 @@
 import pandas as pd
 import glassdoor_scraper as gs
-import scraperV2 as s2
 
 path =  "C:/Users/RussellP/Documents/Data Engineering Projects/salary_estimator_project/chromedriver"
 
