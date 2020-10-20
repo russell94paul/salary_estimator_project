@@ -1,10 +1,13 @@
-import glassdoor_scraper as gs
 import pandas as pd
+import glassdoor_scraper as gs
+import scraperV2 as s2
 
 path =  "C:/Users/RussellP/Documents/Data Engineering Projects/salary_estimator_project/chromedriver"
 
 # Parameters are Job Title, Number of Jobs,
-df = gs.get_jobs('data engineer', 5, False, path, 1)
+df = s2.get_jobs('data engineer', 1000, False, path, 3)
 
-print(df.head)
+# Convert from DataFrame to CSV
+df.to_csv('glassdoor_jobs.csv', index=False)
+
 

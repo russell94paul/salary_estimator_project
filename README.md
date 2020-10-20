@@ -1,1 +1,1 @@
-# salary_estimator_proj
+# salary_estimator_project
