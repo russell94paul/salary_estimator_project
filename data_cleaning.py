@@ -30,7 +30,7 @@ salary = df['Salary Estimate'].apply(lambda x: x.split('(')[0])
 removed_k = salary.apply(lambda x: x.replace('k', '').replace('$', ''))
 
 # Create Column for Per Hour and Employer Provided Salary in the case there is per hour or employer provided salaries
-# df['Hourly'] = df['Salary Estimate'].apply(lambda x: 1 if 'per hour' in x.lower() else 0)  # use this type of method to parse out per hour also)
+df['Hourly'] = df['Salary Estimate'].apply(lambda x: 1 if 'per hour' in x.lower() else 0)  # use this type of method to parse out per hour also)
 
 # Get the min salary for the salary estimate range and convert to int
 df['min_salary'] = removed_k.apply(lambda x: int(x.split('-')[0]))
