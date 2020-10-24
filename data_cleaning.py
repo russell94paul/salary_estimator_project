@@ -30,7 +30,7 @@ salary = df['Salary Estimate'].apply(lambda x: x.split('(')[0])
 removed_k = salary.apply(lambda x: x.replace('k', '').replace('$', ''))
 
 # Create Column for Per Hour and Employer Provided Salary in the case there is per hour or employer provided salaries
-# df['Hourly'] = df['Salary Estimate'].apply(lambda x: 1 if 'per hour' in x.lower() else 0)  # use this type of method to parse out per hour also)
+df['Hourly'] = df['Salary Estimate'].apply(lambda x: 1 if 'per hour' in x.lower() else 0)  # use this type of method to parse out per hour also)
 
 # Get the min salary for the salary estimate range and convert to int
 df['min_salary'] = removed_k.apply(lambda x: int(x.split('-')[0]))
@@ -61,8 +61,6 @@ df['same_state'] = df.apply(lambda x: 1 if x.Location == x.Headquarters else 0, 
 df['age'] = df['Founded'].apply(lambda x: x if x < 1 else 2020 - x)
 
 # JOB DESCRIPTION PARSING
-df['Job Description']
-
 # Python
 df['python'] = df['Job Description'].apply(lambda x: 1 if 'python' in x.lower() else 0)
 
