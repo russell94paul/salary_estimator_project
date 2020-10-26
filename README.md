@@ -12,7 +12,7 @@ https://github.com/arapfaik/scraping-glassdoor-selenium
 **Data Cleaning:** Engineer features from the text of each job description to quantify the value companies put on python, excel, aws, and spark. **Completed** </br>
 **Exploratory Data Analysis:** Use Jupyter notebook and graphing libraries such as matplotlib and seaborn in order to discover main characteristics of the data. Check it out here [EDA Notebook](https://github.com/russell94paul/salary_estimator_project/blob/master/data_eda.ipynb) **Completed**
 </br>
-**Model Selection:** Compare and Evalaute ML Models and choose the model with best performance. </br>
+**Model Selection:** Compare and Evalaute ML Models and choose the model with best performance. </br> **Completed**
 **Productionize:** Build a client facing API using flask. </br>
 
 ## Additional Goals:
