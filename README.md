@@ -2,6 +2,7 @@
 
 ## Resources
 https://github.com/arapfaik/scraping-glassdoor-selenium
+https://shandou.medium.com/export-and-create-conda-environment-with-yml-5de619fe5a2
 
 ## Project Goals:
 
