@@ -67,6 +67,7 @@ plt.plot(alpha, error)
 # ties the two values together into a paired list (tuple) non iteratable
 err = tuple(zip(alpha, error))
 df_err = pd.DataFrame(err, columns = ['alpha', 'error'])
+# Displaying the highest alpha (best performing parameter value for our model)
 df_err[df_err.error == max(df_err.error)]
 
 # optimum alpha 0.03 err = -6.88
@@ -110,6 +111,26 @@ mean_absolute_error(y_test, tpred_rf) # 5.202090686274509  - Best Model
 # We could run this through a regression model and use weights instead of just adding them together
 # This ensemble approach is better for classification problems
 mean_absolute_error(y_test, (tpred_lm + tpred_rf)/2)
+
+# Productionizing the model
+import pickle
+
+# Creating pickle file for the model
+pickl = {'model': gs.best_estimator_}
+pickle.dump(pickl, open('model_file' + ".p", "wb"))
+
+file_name= 'model_file.p'
+with open(file_name, 'rb') as pickled:
+    data = pickle.load(pickled)
+    model = data['model']
+
+x_test.iloc[1,:].values
+# Testing that the pickled model works
+model.predict(x_test.iloc[1,:].values.reshape(1, -1))
+
+
+list(x_test.iloc[1,:])
+    
 
 
 
