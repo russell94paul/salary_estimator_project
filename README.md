@@ -17,7 +17,7 @@ https://shandou.medium.com/export-and-create-conda-environment-with-yml-5de619fe
 **Productionize:** Build a client facing API using flask. **Completed** </br>
 
 ## Additional Goals:
-**Cloud Deployment:** Migrate this project to google cloud platform.
+**Cloud Deployment:** Migrate this project to google cloud platform.</br>
 **Scheduling:** Automate the whole process using cron or airflow and deploy this project on a cloud platform (AWS or GCP). </br>
 **Data Visualization:** Loading of Data into BigQuery in order to create a dashboard using Google Data Studio
 
